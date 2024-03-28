@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <div id="app">
+    <div class="header">
+      <h1>My Website</h1>
+      <p>Resize the browser window to see the effect.</p>
+    </div>
+
+    <div class="topnav">  
+      <a href="index.html">Home</a>  
+      <a href="pet.html">pet</a>  
+      <a href="travel.html">Travel</a>  
+      <a href="#" style="float:right">Link</a>  
+</div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>YunNan</h2>
+          <h5>Family portrait, February 9,2024</h5>
+          <img src="34.jpg" alt="image" style="width:50%; height:auto; max-height:300px;">  
+          <p>This picture is of Erhai Lake</p>
+        </div>
+        <div class="card">
+          <h2>Jade Dragon Snow Mountain</h2>
+          <h5>February 10, 2024</h5>
+          <img src="78.jpg" alt="image" style="width:50%; height:auto; max-height:500px;">
+          <p>Saw Jade Mountain, went to blue moon Valley</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Xishuangbanna cuisine</h2>
+          <img src="45.jpg" alt="image" style="width:100%; height:auto; max-height:500px;">
+          <p></p>
+        </div>
+        <div class="card">
+          <h3>Food in Ganzhou, Jiangxi Province</h3>
+          <img src="56.jpg" alt="image" style="width:100%; height:auto; max-height:500px;">
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Go to more places to enjoy the beauty</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>I'm Agatha from 22ITA1,03/26/2024</h2>
+    </div>
+
+  </div>
+  <script>
+    const header = document.querySelector('.header h1');
+    const topNav = document.querySelectorAll('.topnav a');
+
+    for (let i = 0; i < topNav.length; i++) {
+      topNav[i].addEventListener('click', function () {
+        header.innerHTML = topNav[i].innerText;
+      });
+    }
+
+  </script>
+</body>
+
+</html>
